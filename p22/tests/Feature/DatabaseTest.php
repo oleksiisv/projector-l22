@@ -10,6 +10,6 @@ class DatabaseTest extends \Tests\TestCase
     {
         $result = DB::connection()->getDatabaseName();
 
-        $this->assertEquals($result, 'l4app');
+        $this->assertEquals($result, 'default');
     }
 }
