@@ -17,7 +17,7 @@ class TransactionsTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/transactions')
-                    ->assertSee('Transactions');
+                    ->assertDontSee('ProjectorP22');
         });
     }
 }
